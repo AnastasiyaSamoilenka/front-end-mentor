@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+*{
+  margin: 0;
+}
+
+body {
+
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  background-color: hsl(233, 47%, 7%);
+  line-height: 1.5;
+  flex-direction: column;
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+h1 {
+
+  color: hsl(0, 0%, 100%);
+  font-family: 'Inter', sans-serif;
+  /* font-weight: 700;
+  text-align: left; */
+}
+.statistChild p {
+
+  color: hsl(0, 0%, 100%, 0.6);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  text-align: left;
+  opacity: 0.7;
+  padding: 0;
+}
+p {
+
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  /* font-weight: 400;
+  text-align: left; */
+  opacity: 0.6;
+  padding-top: 2rem;
+}
+
+@media only screen and (max-width: 375px) {
+  .card 
+  {
+    flex-wrap: wrap-reverse;
+    background-color: hsl(233, 47%, 7%);
+    margin: 10%;
+    border-radius: 10px;
+  }
+}
+.card {
+
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(277, 64%, 61%);
+}
+
+.text {
+
+  background-color:  hsl(244, 38%, 16%);
+  padding: 6%;
+}
+
+@media only screen and (max-width: 375px) {
+  .statistics {
+
+    flex-direction: column;
+    /* align-items: center;
+    align-content: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.statistics {
+  
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  /* justify-content: left; */
+  padding-top: 3rem;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 375px) {
+  .statistChild {
+
+    align-items: center;
+    padding: 2rem;
+  }
+}
+
+.statistChild {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+
+ /* display: block; */
+ /* background-color: hsl(277, 64%, 61%); */
+ mix-blend-mode: multiply;
+ opacity: 0.8;
+ max-width: 100%;
+ /* height: auto; */
+ /* box-sizing:content-box; */
+}
+
+.velvet {
+
+ color: hsl(277, 64%, 61%);
+}
+
+.attribution p,a {
+
+  text-align: center;
+  padding: 0;
+  color:white;
+}
