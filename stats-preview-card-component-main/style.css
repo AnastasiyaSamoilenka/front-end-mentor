@@ -1,124 +1,129 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-*{
-  margin: 0;
-}
+  * {
+    margin: 0;
+  }
 
-body {
+  body {
 
-  display: flex;
-  height: 100vh;
-  justify-content: space-between;
-  background-color: hsl(233, 47%, 7%);
-  line-height: 1.5;
-  flex-direction: column;
-  margin-inline: auto;
-  width: min(90%, 70.5rem);
-}
-
-h1 {
-
-  color: hsl(0, 0%, 100%);
-  font-family: 'Inter', sans-serif;
-  /* font-weight: 700;
-  text-align: left; */
-}
-.statistChild p {
-
-  color: hsl(0, 0%, 100%, 0.6);
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 400;
-  text-align: left;
-  opacity: 0.7;
-  padding: 0;
-}
-p {
-
-  color: hsla(0, 0%, 100%, 0.75);
-  font-family: 'Lexend Deca', sans-serif;
-  /* font-weight: 400;
-  text-align: left; */
-  opacity: 0.6;
-  padding-top: 2rem;
-}
-
-@media only screen and (max-width: 375px) {
-  .card 
-  {
-    flex-wrap: wrap-reverse;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
     background-color: hsl(233, 47%, 7%);
-    margin: 10%;
+    line-height: 1.5;
+    flex-direction: column;
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+    font-size: 15px;
+  }
+
+  h1 {
+
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+  }
+
+  p {
+
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    opacity: 0.6;
+    padding: 2rem 3rem 0rem 0rem;
+    font-weight: 400;
+  }
+
+  .statistChild p {
+
+    color: hsl(0, 0%, 100%, 0.6);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    opacity: 0.7;
+    padding: 0;
+    font-weight: 400;
+  }
+
+  .card {
+
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(277, 64%, 61%);
     border-radius: 10px;
   }
-}
-.card {
 
-  display: flex;
-  flex-direction: row;
-  background-color: hsl(277, 64%, 61%);
-}
+  @media (max-width: 600px) {
+    .card {
+      flex-wrap: wrap-reverse;
+      margin: 10%;
+      border-radius: 10px;
+    }
+  }
 
-.text {
+  .text {
+    background-color: hsl(244, 38%, 16%);
+    padding: 6%;
+    border-radius: 10px 0px 0px 10px;
 
-  background-color:  hsl(244, 38%, 16%);
-  padding: 6%;
-}
+  }
 
-@media only screen and (max-width: 375px) {
+  @media (max-width: 600px) {
+    .text {
+      border-radius: 0px 0px 10px 10px;
+    }
+  }
+
   .statistics {
-
-    flex-direction: column;
-    /* align-items: center;
-    align-content: center; */
-    justify-content: center;
+    display: flex;
     flex-wrap: wrap;
+    padding-top: 3rem;
+    padding-right: 6rem;
+    justify-content: space-between;
   }
-}
 
-.statistics {
-  
-  display: flex;
-  flex-wrap: wrap;
-  /* flex-direction: row; */
-  /* justify-content: left; */
-  padding-top: 3rem;
-  justify-content: space-between;
-}
+  @media (max-width: 600px) {
+    .statistics {
 
-@media only screen and (max-width: 375px) {
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
   .statistChild {
-
-    align-items: center;
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
   }
-}
 
-.statistChild {
+  @media (max-width: 600px) {
+    .statistChild {
+      align-items: center;
+      padding: 2rem;
+    }
+  }
 
-  display: flex;
-  flex-direction: column;
-}
+  .image {
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+    max-width: 100%;
+    border-radius: 0px 10px 10px 0px;
+  }
 
-.image {
+  @media (max-width: 600px) {
+    .image {
+      width: 100%;
+      border-radius: 10px 10px 0px 0px;
+    }
+  }
 
- /* display: block; */
- /* background-color: hsl(277, 64%, 61%); */
- mix-blend-mode: multiply;
- opacity: 0.8;
- max-width: 100%;
- /* height: auto; */
- /* box-sizing:content-box; */
-}
+  .velvet {
+    color: hsl(277, 64%, 61%);
+  }
 
-.velvet {
-
- color: hsl(277, 64%, 61%);
-}
-
-.attribution p,a {
-
-  text-align: center;
-  padding: 0;
-  color:white;
-}
+  .attribution p,
+  a {
+    text-align: center;
+    padding: 0;
+    color: white;
+  }
